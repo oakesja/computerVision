@@ -1,0 +1,182 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+ title "Textured model"
+}
+
+NavigationInfo {
+ headlight TRUE
+}
+
+DEF View1 Viewpoint {
+  orientation 0 1 0 3.14
+  position  0, 0, 0
+  fieldOfView 1
+  description "View 1 - Observer"
+}
+
+Background {
+  skyAngle [
+    1.39626
+    1.51844
+  ]
+  skyColor [
+    0.0 0.0 0.0
+    1.0 0.8 0.8
+    1.0 1.0 0.0
+  ]
+  groundAngle [
+    1.5708
+  ]
+  groundColor [
+    0.0 0.0 0.0
+    0.0 0.50196 0.0
+  ]
+}
+
+DEF MYPOINTS Coordinate {
+  point [
+         -0.53   -0.38    2.59,
+         -0.23   -0.39    2.32,
+         -0.23   -0.33    2.31,
+         -0.23    0.07    2.30,
+         -0.53    0.08    2.57,
+         -0.44   -0.02    2.50,
+         -0.44    0.03    2.50,
+         -0.34   -0.02    2.40,
+         -0.34    0.02    2.40,
+         -0.65   -0.46    2.45,
+         -0.53   -0.46    2.59,
+         -0.53    0.30    2.56,
+         -0.53    0.11    2.57,
+         -0.23    0.08    2.29,
+         -0.23    0.29    2.28,
+          0.17    0.09    2.75,
+          0.27   -0.38    2.88,
+         -0.03   -0.32    2.54,
+          0.06   -0.32    2.65,
+         -0.03   -0.27    2.54,
+          0.06   -0.27    2.65,
+          0.26    0.09    2.86,
+          0.27   -0.11    2.87,
+          0.45   -0.11    2.70,
+          0.45   -0.39    2.72,
+          0.84   -0.38    3.16,
+          0.84   -0.10    3.15,
+         -0.65    0.30    2.42,
+          0.26    0.31    2.85
+  ]
+}
+
+Transform {
+   rotation   0.00    0.00    1.00    3.14
+
+   children [
+
+      Shape  {
+         appearance Appearance {
+            texture ImageTexture {
+               url "texture1.png"
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 9, 27, 11, 10, -1 ]
+            texCoord TextureCoordinate {
+               point [
+                     0.09    1.00,
+                     0.01    0.01,
+                     0.86    0.00,
+                     0.99    1.00
+               ]
+            }
+            texCoordIndex [ 0, 1, 2, 3, -1 ]
+         }
+      }
+
+      Shape  {
+         appearance Appearance {
+            texture ImageTexture {
+               url "texture2.png"
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 0, 11, 14, 1, -1 ]
+            texCoord TextureCoordinate {
+               point [
+                     0.02    1.00,
+                     0.01    0.01,
+                     0.98    0.00,
+                     1.00    0.98
+               ]
+            }
+            texCoordIndex [ 0, 1, 2, 3, -1 ]
+         }
+      }
+
+      Shape  {
+         appearance Appearance {
+            texture ImageTexture {
+               url "texture3.png"
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 1, 14, 28, 16, -1 ]
+            texCoord TextureCoordinate {
+               point [
+                     0.03    1.00,
+                     0.00    0.03,
+                     0.96    0.00,
+                     1.00    0.99
+               ]
+            }
+            texCoordIndex [ 0, 1, 2, 3, -1 ]
+         }
+      }
+
+      Shape  {
+         appearance Appearance {
+            texture ImageTexture {
+               url "texture4.png"
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 16, 22, 23, 24, -1 ]
+            texCoord TextureCoordinate {
+               point [
+                     0.06    0.95,
+                     0.03    0.04,
+                     0.97    0.02,
+                     0.95    0.94
+               ]
+            }
+            texCoordIndex [ 0, 1, 2, 3, -1 ]
+         }
+      }
+
+      Shape  {
+         appearance Appearance {
+            texture ImageTexture {
+               url "texture5.png"
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 23, 26, 25, 24, -1 ]
+            texCoord TextureCoordinate {
+               point [
+                     0.04    0.99,
+                     0.02    0.04,
+                     0.95    0.01,
+                     0.97    0.97
+               ]
+            }
+            texCoordIndex [ 0, 1, 2, 3, -1 ]
+         }
+      }
+
+   ]
+}

@@ -1,0 +1,12 @@
+COMMENTS
+==============================
+
+correspondences marked and labeled on images (10 pts max) - 10
+normalizing transformations (10 pts max) - 10
+solve for F and enforce singularity constraint (20 pts max) - 20
+denormalize F (10 pts max) - 10
+set of images with points and epipolar lines marked (20 pts max) - 20
+solve for E and enforce constraint that E has 5 dof (10 pts max) - 5; wrong K matrix
+Solve for the possible R's and T's (20 pts max) - 20
+
+Score: 95/100

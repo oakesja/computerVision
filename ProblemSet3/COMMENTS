@@ -1,0 +1,19 @@
+COMMENTS
+==============================
+
+Mosaic
+
+reasonable set of correspondences (10 pts max) - 9; a couple fuzzy spots
+script for building the mosaic (10 pts max) - 10
+transformation and transformed images (10 pts max) - 10
+final mosaiced image (10 pts max) - 10
+
+2 mosaics - +5
+
+Rectification
+
+script for rectifying image pair (10 pts max) - 9; Should only be 1 Rrect 
+rectified images (10 pts max) - 9; rectified images should be same size?
+
+
+Score: 62/60

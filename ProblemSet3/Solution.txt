@@ -1,0 +1,13 @@
+Jacob Oakes
+
+For the mosaics I picked the points between the pair of pictures that I thought were the best. For the quad I used the ones right next to each other.
+Once I found these I found the homography to map them to each other. From there I picked picture 6 as the reference and mapped all the pictures to it
+by multiplying matrices. 
+
+NOTE: I didn't read the instructions close enough so that's why I did both the quad and the Wislon North.
+
+For the rectification I first found the x vector by subtracting the two camera centers and normalizing them. Then I was able to find the y vectors by
+crossing it with the third row of each rotation vector. Then the z vector was just the y and x vectors crossed. The new rotation matrix is just 
+these vectors as row vectors. 
+
+To rectify it you have to undo the camera calbrations and rotation matrices and then apply the new rotation matrix and any camera matrix. 

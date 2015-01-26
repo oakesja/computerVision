@@ -1,0 +1,4 @@
+Both transformations take the tiles and make the lines of the square parallel again.
+The rectify direct goes further and removes all projective distortion and makes the tiles square again which is what is done to the first image. 
+The second image used an affine transformation that moved the line of infinity back to where it is supposed to be. This removed all of the 
+prospective distortion except for skew which is why the tiles look like trapezoids.
